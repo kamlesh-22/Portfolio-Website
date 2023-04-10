@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio Webite - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar And Intro -->
+    <div id="header">
+        <div class="container">
+
+            <!-- Navbar -->
+            <nav>
+
+                <!-- Logo -->
+                <h1 class="userLogo">KS.</h1>
+
+                <!-- List Items -->
+                <ul>
+                    <li><a href="#"></a>Home</li>
+                    <li><a href="About"></a>About</li>
+                    <li><a href="Services"></a>Services</li>
+                    <li><a href="Contact"></a>Contact</li>
+                </ul>
+            </nav>
+
+            <!-- Intro -->
+            <div class="introSection">
+
+                <!-- Intro Text -->
+                <div class="header-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Hi, I'm <span>Kamlesh</span> <br></be>From Pune.</h1>
+                </div>
+
+                <!-- User Photo -->
+                <div class="userPhoto">
+                    <img src="images/WhatsApp Image 2023-04-10 at 08.43.31.jpeg" alt="User-Photo">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------- -->
+    <!-- About Section -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/WhatsApp Image 2023-04-10 at 12.50.44.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me </h1>
+                    <p>To work as successful professional in a challenging and dynamic environment and to keep adding value to the organization
+                         that i represent and serve, while
+                         to the organization that i represent and serve, 
+                         while constantly upgrading my skills, knowledge and financial growth.</p> 
+                                          
+                        <div class="tab-titles">
+                           <p class="tab-links active-link" onclick="opentab('Skill')">Skills</p>
+                           <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                           <p class="tab-links"onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills" >
+                          <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+                            <li><span>App Devlopment</span><br>Building Android/ios app</li>
+                          </ul>
+                        </div>
+                        <div class="tab-contents " id="Experience">
+                            <ul>
+                              <li><span>Dipsatch Suprervisor</span><br>alpha foam ltd</li>
+                              <li><span>Dipsatch Suprervisort</span><br>Stanly black and decker pvt ltd</li>
+                              <li><span>Desktop Suport Engineer </span><br>Explore infotech pune</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                              <li><span>SSC</span><br>nagpur university 2012</li>
+                              <li><span>HSC</span><br>nagpur university 2014</li>
+                              <li><span>Bsc computer</span><br>pune univercity 2022 </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------- -->
+    <!-- Services Section -->
+    <div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="Services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p> I am app devloper and all are clear.</p>
+                <a href="#"> learn more </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p> I am app devloper and all are clear.</p>
+                <a href="#"> learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p> I am app devloper and all are clear</p>
+                <a href="#"> learn more </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="portfolio">
+
+        <div class="container">
+         <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="Work">
+                    <img src="images/photo-1563986768609-322da13575f3.jpg"> 
+                </div>
+
+                <div class="Work">
+                    <img src="images/photo-1563986768609-322da13575f3.jpg"> 
+                </div>
+
+                <div class="Work">
+                    <img src="images/photo-1563986768609-322da13575f3.jpg"> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+   
+   function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+     }
+
+   for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+   }
+   event.currentTarget.classList.add("active-link");
+   document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+</body>
+</html>
